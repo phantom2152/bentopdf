@@ -66,8 +66,8 @@ RUN --mount=type=secret,id=VITE_CORS_PROXY_URL \
 # Production stage — uses standard nginx (starts as root, drops to PUID/PGID)
 FROM nginx:stable-alpine-slim
 
-LABEL org.opencontainers.image.source="https://github.com/alam00000/bentopdf"
-LABEL org.opencontainers.image.url="https://github.com/alam00000/bentopdf"
+LABEL org.opencontainers.image.source="https://github.com/phantom2152/bentopdf"
+LABEL org.opencontainers.image.url="https://github.com/phantom2152/bentopdf"
 
 ARG BASE_URL
 

@@ -6,7 +6,7 @@ services:
     # Docker Hub (Alternative)
     # simple mode - bentopdfteam/bentopdf-simple:latest
     # default mode - bentopdfteam/bentopdf:latest
-    image: ghcr.io/alam00000/bentopdf-simple:latest
+    image: ghcr.io/phantom2152/bentopdf-simple:latest
     container_name: bentopdf
     restart: unless-stopped
     ports:
