@@ -67,7 +67,7 @@ ENV DISABLE_TOOLS=$DISABLE_TOOLS
 # Public-facing canonical site URL. Defaults to the official site so self-hosters
 # consolidate SEO signals back to bentopdf.com. A custom SITE_URL marks every page
 # noindex unless ALLOW_INDEXING=true is also set.
-ARG SITE_URL=https://www.bentopdf.com
+ARG SITE_URL=https://phantom2152.github.io/bentopdf
 ENV SITE_URL=$SITE_URL
 ARG ALLOW_INDEXING=false
 ENV ALLOW_INDEXING=$ALLOW_INDEXING
@@ -83,8 +83,8 @@ RUN --mount=type=secret,id=VITE_CORS_PROXY_URL,required=false \
 # Production stage
 FROM quay.io/nginx/nginx-unprivileged:alpine-slim
 
-LABEL org.opencontainers.image.source="https://github.com/alam00000/bentopdf"
-LABEL org.opencontainers.image.url="https://github.com/alam00000/bentopdf"
+LABEL org.opencontainers.image.source="https://github.com/phantom2152/bentopdf"
+LABEL org.opencontainers.image.url="https://github.com/phantom2152/bentopdf"
 
 # global arg to local arg
 ARG BASE_URL
