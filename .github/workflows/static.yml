@@ -29,6 +29,7 @@ env:
   BASE_URL: ${{ vars.BASE_URL }}/
   SITE_URL: ${{ vars.SITE_URL }}
   ALLOW_INDEXING: ${{ vars.ALLOW_INDEXING }}
+  VITE_CORS_PROXY_URL: ${{ vars.VITE_CORS_PROXY_URL }}
   HUSKY: 0
 
 jobs:
